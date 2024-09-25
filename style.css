@@ -1,0 +1,286 @@
+/* Estilos Generales */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+  /* background-color: #f7f7f7; /* Fondo gris claro */
+  background-image: linear-gradient(to bottom, #f7f7f7, #e5e5e5); /* Fondo degradado gris */
+
+}
+
+/* Navegación */
+header {
+  /*background-color: #fff;*/
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+  background-color: #f7f7f7;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+nav .logo img {
+  width: 260px; /* o cualquier otro valor que desees */
+  height: auto; /* para mantener la proporción */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #e91e63;
+}
+
+nav .menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+nav .menu-toggle i {
+  color: #333;
+}
+
+/* Sección Hero */
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color:  #e91e63; /* #fff;   fondo rosa */
+  text-align: center;
+  /*background-color: rgba(233, 30, 99, 0.6);  fondo rosa */
+  padding: 0px; /* espacio entre la imagen y el texto */
+  width: 80%; /* ajusta el ancho del contenedor */
+}
+
+.hero-content img {
+  display: block;
+  width: 100%; /* ancho de la imagen */
+  /* height: auto; altura automática para mantener la proporción */
+  max-height: 470px; /* altura máxima de la imagen */
+  object-fit: cover;  /*ajusta la imagen al ancho del contenedor */
+  text-align: center;
+  border-radius: 1px; /* opcional, para darle un borde redondeado */
+  /* margin: 60 auto 20px;margen inferior para dejar espacio para el texto */
+  margin: 0 auto;
+  }
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 1px;
+  margin-top: 35px; /* hizo que mi encabezado no se corte agregar un margen superior para reducir el espacio en blanco */
+
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin-bottom: 1px;
+}
+
+/* Secciones */
+.section {
+  padding-top: 10px; /* o cualquier otro valor que desees */
+  top: 60px; /* ajusta la posición vertical para que la sección quede debajo de la barra de navegación */
+  padding: 80px 50px; /* esto crea los espacios entre secciones */
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  color: #e91e63;
+  margin-bottom: 10px;
+  margin-top: 20px; /* agregar un margen superior para reducir el espacio en blanco */
+
+}
+
+.section p {
+  font-size: 1.1em;
+  margin-bottom: 1px; /* reducir el espacio en blanco entre los párrafos */
+  line-height: 1.6;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* Beneficios */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+}
+
+.feature i {
+  font-size: 4em;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+}
+
+/* Cómo Funciona */
+.section ol {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section ol li {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.section ol li strong {
+  color: #e91e63;
+}
+
+.img-como-funciona {
+  width: 60%; /* o cualquier otro valor que desees */
+  height: auto;
+  margin: 30px auto; /* opcional, para agregar un margen */
+}
+
+/* Contacto */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-item {
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+}
+
+.contact-item h3 {
+  font-size: 1.5em;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1em;
+}
+
+.contact-item a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+  background-color: #f8bbd0;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .features .feature,
+  .contact-info .contact-item {
+    width: 45%;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features .feature,
+  .contact-info .contact-item {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: left 0.3s;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .section h2 {
+    font-size: 2em;
+  }
+
+  .section p {
+    font-size: 1em;
+  }
+}
