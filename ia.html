@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MammoInsight - Inteligencia Artificial</title>
+    <meta name="description"
+        content="Descubre cómo MammoInsight utiliza la Inteligencia Artificial y las Redes Neuronales Convolucionales (CNN) para mejorar la detección temprana del cáncer de mama.">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <style>
+        .ia-section {
+            padding: 3rem 0;
+        }
+
+        .ia-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .ia-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .tech-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tech-item {
+            background-color: var(--light-gray);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+            color: var(--dark-text);
+            border: 1px solid #ddd;
+        }
+
+        .cnn-diagram {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="assets/images/logo.png" alt="MammoInsight Logo" class="logo-img">
+                <span class="site-title">MammoInsight</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ia.html" class="active">IA</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Inteligencia Artificial</h1>
+            </div>
+        </section>
+
+        <!-- Intro Section: Qué es la IA -->
+        <section class="section">
+            <div class="content-container">
+                <div class="grid-2-col">
+                    <div>
+                        <h2>¿Qué es la Inteligencia Artificial (IA)?</h2>
+                        <p>
+                            La inteligencia artificial (IA) es la capacidad de las computadoras o máquinas de realizar
+                            tareas que normalmente requieren la inteligencia humana. Por ejemplo, reconocer rostros en
+                            fotos, entender el habla o tomar decisiones basadas en datos. La IA se está utilizando cada
+                            vez más en muchas áreas, como en los teléfonos inteligentes, las aplicaciones de mapas y,
+                            más recientemente, en la medicina.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>¿Cómo ayuda la IA en la salud?</h2>
+                        <p>
+                            En el campo de la salud, la IA puede analizar rápidamente grandes cantidades de datos
+                            médicos, como imágenes o informes, para encontrar patrones o detalles que a veces los
+                            humanos pueden pasar por alto. Esto ayuda a los médicos a tomar decisiones más rápidas y
+                            precisas, mejorando así el diagnóstico y tratamiento de enfermedades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Neural Networks Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="content-container">
+                <h2>Redes neuronales y la IA en mamografías</h2>
+                <div class="grid-2-col">
+                    <div>
+                        <p>
+                            Una de las herramientas más poderosas de la inteligencia artificial son las redes neuronales
+                            artificiales, las cuales emulan el funcionamiento del cerebro humano en cuanto a cómo
+                            procesa la información. Estas redes están formadas por capas de neuronas artificiales que se
+                            conectan entre sí, permitiendo a la red aprender y reconocer patrones a partir de grandes
+                            volúmenes de datos, como imágenes de mamografías.
+                        </p>
+                        <p>
+                            El proceso de análisis de una mamografía a través de estas redes comienza con la
+                            transformación de la imagen en una matriz de valores numéricos. Estos valores pasan por
+                            filtros o "kernels" que aplican operaciones matriciales, resaltando características clave
+                            como bordes, texturas o anomalías en los tejidos.
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="assets/images/ia_1.png" alt="Análisis de mamografía" class="cnn-diagram">
+                        <p><em>Procesamiento de imagen mamográfica</em></p>
+                    </div>
+                </div>
+
+                <div class="grid-2-col" style="margin-top: 3rem;">
+                    <div style="text-align: center; order: 2;">
+                        <!-- Image on right for desktop if grid holds, or simply stacked -->
+                        <img src="assets/images/ia_2.png" alt="Arquitectura CNN" class="cnn-diagram">
+                        <p><em>Arquitectura de Red Neuronal Convolucional</em></p>
+                    </div>
+                    <div style="order: 1;">
+                        <h3>Redes Neuronales Convolucionales (CNN)</h3>
+                        <p>
+                            Cuando hablamos de analizar imágenes médicas, como mamografías, utilizamos un tipo especial
+                            de red neuronal llamada Red Neuronal Convolucional (CNN). Estas redes están diseñadas
+                            específicamente para trabajar con imágenes, ya que utilizan filtros para detectar
+                            características clave.
+                        </p>
+                        <p>
+                            La imagen ilustra un ejemplo de arquitectura CNN, donde la <strong>convolución</strong>
+                            resalta patrones, el <strong>pooling</strong> simplifica el procesamiento, y la
+                            <strong>clasificación</strong> final determina si una imagen presenta signos de malignidad.
+                        </p>
+                        <div class="ia-card" style="margin-top: 1rem;">
+                            <h3>🎧 Escucha nuestro episodio</h3>
+                            <p>Descubre cómo las Redes Neuronales Convolucionales están transformando la detección
+                                temprana del cáncer de mama.</p>
+                            <iframe src="https://archive.org/embed/mammoinsight_ML0001" width="100%" height="30"
+                                frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true"
+                                allowfullscreen></iframe>
+                            <!-- Note: Placeholder for podcast if actual file is not available, user can replace -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="section">
+            <div class="content-container">
+                <h2>IA aplicada a las mamografías</h2>
+                <p>
+                    En MammoInsight, aplicamos múltiples modelos y arquitecturas de inteligencia artificial. Nuestro
+                    sistema combina diversas técnicas para:
+                </p>
+                <ul>
+                    <li><strong>Identificar posibles signos de cáncer:</strong> como masas o áreas sospechosas.</li>
+                    <li><strong>Ayudar al diagnóstico preciso:</strong> reduciendo el margen de error y aumentando la
+                        velocidad de detección.</li>
+                </ul>
+                <p class="highlight-text">
+                    La IA no reemplaza a los médicos, sino que los apoya, brindando información útil y haciendo que los
+                    diagnósticos sean más eficientes.
+                </p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <img src="assets/images/modelosIA.png" alt="Modelos de IA"
+                        style="max-width: 80%; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="section" style="background-color: var(--primary-color); color: white;">
+            <div class="content-container">
+                <h2 style="color: white;">Tecnologías y recursos</h2>
+                <div class="grid-2-col">
+                    <div>
+                        <h3 style="color: var(--accent-color);">Desarrollo y Plataforma</h3>
+                        <p>
+                            La plataforma se desarrolla utilizando una combinación de tecnologías modernas para ofrecer
+                            análisis precisos y confiables.
+                        </p>
+                        <ul class="tech-list">
+                            <li class="tech-item" style="color: black;">Python</li>
+                            <li class="tech-item" style="color: black;">FastAPI</li>
+                            <li class="tech-item" style="color: black;">HTML5 & CSS3</li>
+                            <li class="tech-item" style="color: black;">MONAI (Medical Open Network for AI)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-color);">Infraestructura y Datos</h3>
+                        <p>
+                            Garantizamos alto rendimiento y seguridad en el manejo de datos sensibles.
+                        </p>
+                        <ul class="tech-list">
+                            <li class="tech-item" style="color: black;">Google Colab</li>
+                            <li class="tech-item" style="color: black;">Amazon EC2</li>
+                            <li class="tech-item" style="color: black;">Google Drive (Almacenamiento Seguro)</li>
+                            <li class="tech-item" style="color: black;">RSNA & Zenodo (Datasets)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h3>Contáctanos [ <a
+                    href="mailto:mammoinsightdevelops@mammoinsight.org">mammoinsightdevelops@mammoinsight.org</a> ]</h3>
+        </section>
+    </footer>
+
+</body>
+
+</html>

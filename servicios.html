@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MammoInsight - Servicios</title>
+    <meta name="description"
+        content="Servicios de MammoInsight: Análisis de mamografías con IA, modelos de riesgo y herramientas de seguridad de datos.">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <style>
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .service-badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .tool-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .tool-link:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .doi-badge {
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="assets/images/logo.png" alt="MammoInsight Logo" class="logo-img">
+                <span class="site-title">MammoInsight</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="servicios.html" class="active">Servicios</a></li>
+                    <li><a href="ia.html">IA</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Servicios</h1>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="section">
+            <div class="content-container">
+                <h2>Plataforma Integral</h2>
+                <p>
+                    Nuestra plataforma ofrecerá a los médicos acceso a una interfaz centralizada y segura donde podrán
+                    gestionar el análisis de mamografías y los datos clínicos de sus pacientes. Cada profesional tendrá
+                    la capacidad de acceder a un listado completo de sus pacientes, con toda la información relevante y
+                    las imágenes asociadas, sin importar su ubicación.
+                </p>
+                <p>
+                    La plataforma está diseñada para ser accesible desde cualquier lugar, lo que permite a los médicos
+                    revisar los casos de manera rápida y eficiente, con la flexibilidad de actualizar los datos y
+                    realizar diagnósticos en tiempo real. Este enfoque no solo optimiza el flujo de trabajo, sino que
+                    también garantiza la seguridad de la información sensible, cumpliendo con los más altos estándares
+                    de protección de datos.
+                </p>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <!-- Placeholder or relevant image -->
+                    <img src="assets/images/servicios_1.png" alt="Plataforma de servicios"
+                        style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Services Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="content-container">
+                <h2>Servicios (en desarrollo)</h2>
+                <p>
+                    Nuestro equipo está enfocado en desarrollar soluciones innovadoras para la detección temprana del
+                    cáncer de mama, combinando inteligencia artificial y modelos estadísticos predictivos. Estamos
+                    lanzando versiones de Producto Mínimo Viable (<span
+                        style="color: var(--accent-color); font-weight: bold;">PMV</span>), que son versiones
+                    funcionales iniciales de nuestros modelos clave.
+                </p>
+
+                <h3>1) Análisis de imágenes mamográficas con IA</h3>
+
+                <div class="service-card">
+                    <h3>🎀 ML01. Modelo de evaluación de densidad de tejido mamario</h3>
+                    <p>
+                        Este modelo permitirá a los médicos clasificar la densidad del tejido mamario, un factor
+                        importante en la evaluación del riesgo de cáncer de mama.
+                    </p>
+                    <p>
+                        <a href="https://drive.google.com/file/d/1fehHEAFuQ3t01m3TeL2cZPaPYPINtGvP/view?usp=sharing"
+                            target="_blank" style="text-decoration: underline;">Visualiza un test</a>
+                        <br>
+                        <a href="https://mammoinsightdevelopsml01.streamlit.app/" target="_blank"
+                            class="tool-link">Prueba el PMV aquí</a>
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>🎀 ML02. Modelo de clasificación</h3>
+                    <p>
+                        Capaz de identificar si una imagen es potencialmente benigna o maligna.
+                    </p>
+                    <p><em>Más información próximamente disponible.</em></p>
+                </div>
+
+                <div class="service-card">
+                    <h3>🎀 ML03. Modelo de segmentación</h3>
+                    <p>
+                        Este modelo identificará y marcará automáticamente zonas específicas en las mamografías.
+                    </p>
+                    <p><em>Más información próximamente disponible.</em></p>
+                </div>
+
+                <h3>2) Modelos estadísticos basados en datos clínicos</h3>
+
+                <div class="service-card">
+                    <h3>🎀 GAIL01. Modelo de evaluación de riesgo</h3>
+                    <p>
+                        Basado en el Modelo de Gail, este sistema evalúa factores clínicos y genéticos para personalizar
+                        decisiones clínicas y mejorar la precisión diagnóstica.
+                    </p>
+                    <a href="https://developmammoinsight-uo6zhjbtnspypslsjn6vuj.streamlit.app/" target="_blank"
+                        class="tool-link">Prueba el PMV aquí</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Open Tools Section -->
+        <section class="section">
+            <div class="content-container">
+                <h2>Open Tools para la Salud</h2>
+                <p>
+                    Explora algunas de nuestras herramientas innovadoras para mejorar la seguridad y precisión en el
+                    diagnóstico médico. A continuación, te ofrecemos la oportunidad de probar varias funcionalidades sin
+                    restricciones.
+                </p>
+
+                <div class="grid-2-col">
+                    <div class="service-card" style="border-left-color: var(--secondary-color);">
+                        <h3>Cifrado de datos (AES y OpenPGP)</h3>
+                        <p>
+                            Prueba cómo protegemos mamografías y datos clínicos con algoritmos de cifrado avanzado
+                            (SEG001).
+                        </p>
+                        <a href="https://seg001-bbbswctua2uurjznq2prke.streamlit.app/" target="_blank"
+                            class="tool-link">Prueba el PMV (SEG001)</a>
+                        <br>
+                        <div class="doi-badge">
+                            <a href="https://doi.org/10.5281/zenodo.14595011" target="_blank">
+                                <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14595011.svg" alt="DOI">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" style="border-left-color: var(--secondary-color);">
+                        <h3>Eliminación de etiquetas en imágenes (CT001)</h3>
+                        <p>
+                            Retira etiquetas de imágenes mamográficas para mantener la confidencialidad del paciente.
+                        </p>
+                        <a href="https://niy4j7euguinupeywv6wxf-ct001.streamlit.app/" target="_blank"
+                            class="tool-link">Prueba el PMV (CT001)</a>
+                        <br>
+                        <div class="doi-badge">
+                            <a href="https://doi.org/10.5281/zenodo.14599989" target="_blank">
+                                <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14599989.svg" alt="DOI">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" style="border-left-color: var(--secondary-color);">
+                        <h3>Anonimización de archivos DICOM (DS001)</h3>
+                        <p>
+                            Elimina la información sensible de imágenes DICOM para análisis seguro y privado.
+                        </p>
+                        <a href="https://mammoinsight-ds001.streamlit.app/" target="_blank" class="tool-link">Prueba el
+                            PMV (DS001)</a>
+                        <br>
+                        <div class="doi-badge">
+                            <a href="https://doi.org/10.5281/zenodo.14628804" target="_blank">
+                                <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14628804.svg" alt="DOI">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h3>Contáctanos [ <a
+                    href="mailto:mammoinsightdevelops@mammoinsight.org">mammoinsightdevelops@mammoinsight.org</a> ]</h3>
+        </section>
+    </footer>
+
+</body>
+
+</html>

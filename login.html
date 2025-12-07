@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MammoInsight - Login</title>
+    <meta name="description" content="Acceso a la plataforma MammoInsight y registro de nuevos usuarios.">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        .divider {
+            margin: 2rem 0;
+            border-top: 1px solid #ddd;
+            position: relative;
+        }
+
+        .divider span {
+            background-color: #fff;
+            padding: 0 10px;
+            color: #777;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .google-form-container {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            min-height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="assets/images/logo.png" alt="MammoInsight Logo" class="logo-img">
+                <span class="site-title">MammoInsight</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ia.html">IA</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Acceso a la plataforma</h1>
+            </div>
+        </section>
+
+        <!-- Login / Register Section -->
+        <section class="section">
+            <div class="content-container">
+
+                <div class="login-container">
+                    <h2>Iniciar Sesión</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666;">Accede a tus herramientas de análisis.</p>
+                    <form
+                        onsubmit="event.preventDefault(); alert('La funcionalidad de login estará disponible próximamente.');">
+                        <input type="email" class="login-input" placeholder="Correo electrónico" required>
+                        <input type="password" class="login-input" placeholder="Contraseña" required>
+                        <button type="submit" class="login-btn">Ingresar</button>
+                    </form>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;"><a href="#"
+                            style="color: var(--primary-color);">¿Olvidaste tu contraseña?</a></p>
+                </div>
+
+                <div class="google-form-container">
+                    <div class="divider"><span>o</span></div>
+                    <h2>Registro de nuevos usuarios</h2>
+                    <p>Si aún no tienes cuenta, por favor completa el siguiente formulario de registro.</p>
+                    <!-- Embedded Google Form from original site -->
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScoUFXKUhqBgpAFSIjvRcGwpy7_m1KL5sL7DoyhORXR1rlfkA/viewform?embedded=true">Loading…</iframe>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h3>Contáctanos [ <a
+                    href="mailto:mammoinsightdevelops@mammoinsight.org">mammoinsightdevelops@mammoinsight.org</a> ]</h3>
+        </section>
+    </footer>
+
+</body>
+
+</html>

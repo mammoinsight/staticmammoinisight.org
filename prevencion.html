@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MammoInsight - Prevención</title>
+    <meta name="description"
+        content="Información vital sobre la prevención del cáncer de mama, autoexamen y detección temprana. MammoInsight ayuda a salvar vidas.">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <style>
+        /* Specific styles for Prevención page lists and highlights */
+        .myth-fact {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            /* Light grey background for myths */
+            border-left: 5px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .myth-fact h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-list li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-list li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.8rem;
+            height: 1.8rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.8rem;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="assets/images/logo.png" alt="MammoInsight Logo" class="logo-img">
+                <span class="site-title">MammoInsight</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="prevencion.html" class="active">Prevención</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ia.html">IA</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Prevención</h1>
+            </div>
+        </section>
+
+        <!-- Intro Section: El cáncer de mama -->
+        <section class="section">
+            <div class="content-container">
+                <h2>El cáncer de mama</h2>
+                <p>
+                    El cáncer de mama es una de las principales causas de mortalidad en mujeres argentinas, con más de
+                    21,000 nuevos casos diagnosticados al año. Este tipo de cáncer afecta mayormente a las mujeres, pero
+                    también puede presentarse en hombres.
+                </p>
+                <p>
+                    Se ha demostrado que cuando el cáncer de mama es detectado de manera temprana, es altamente curable.
+                    Entre los factores de riesgo, algunos no son modificables, como ser mujer, la edad o la genética;
+                    mientras que otros, como el sedentarismo, el tabaquismo, el sobrepeso y el consumo de alcohol, son
+                    factores que podemos cambiar para reducir las probabilidades de desarrollar la enfermedad.
+                </p>
+            </div>
+        </section>
+
+        <!-- Autoexam Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="content-container">
+                <h2>¿Cómo realizar el autoexamen mamario?</h2>
+                <div class="grid-2-col">
+                    <div>
+                        <p>
+                            El autoexamen mamario es una técnica sencilla que puede ayudar a las mujeres a conocer mejor
+                            sus cuerpos y detectar cambios visibles o palpables en las mamas. Sin embargo, es importante
+                            aclarar que <strong>el autoexamen no sustituye a la mamografía</strong>, que es el método
+                            más efectivo para detectar el cáncer de mama en sus etapas iniciales.
+                        </p>
+                        <p>
+                            Se recomienda que las mujeres mayores de 50 años o con factores de riesgo realicen una
+                            mamografía anual como parte de su rutina de cuidado de la salud.
+                        </p>
+
+                        <h3>Pasos para el autoexamen</h3>
+                        <p><strong>Frecuencia:</strong> Realiza el autoexamen una vez al mes, preferiblemente antes o
+                            después de ducharte.</p>
+
+                        <ul class="step-list">
+                            <li>
+                                <strong>Observación:</strong> Frente a un espejo, observa si hay cambios en la forma,
+                                tamaño o textura de tus mamas.
+                            </li>
+                            <li>
+                                <strong>Palpación:</strong> Utiliza las yemas de tus dedos para palpar suavemente cada
+                                mama en busca de bultos o nódulos.
+                            </li>
+                            <li>
+                                <strong>Posiciones:</strong> Repite el proceso tanto de pie como acostada, presionando
+                                con diferentes niveles de intensidad.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- Placeholder for visual guide or relevant image -->
+                        <img src="assets/images/prevencion_1.png" alt="Guía de autoexamen" class="content-img"
+                            style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alert Signs Section -->
+        <section class="section">
+            <div class="content-container">
+                <h2>Signos de alerta del cáncer de mama</h2>
+                <p>
+                    El cáncer de mama es una enfermedad que, cuando se detecta de manera temprana, ofrece mayores
+                    posibilidades de tratamiento exitoso. Es importante prestar atención a los cambios en las mamas,
+                    como:
+                </p>
+                <ul>
+                    <li>Bultos o nódulos palpables.</li>
+                    <li>Endurecimientos.</li>
+                    <li>Cambios en la textura o color de la piel (piel de naranja).</li>
+                    <li>Retracción del pezón o secreción.</li>
+                </ul>
+                <p>
+                    La autoexploración mensual es un paso clave para conocer el estado de las mamas y detectar cualquier
+                    anormalidad, pero no reemplaza la importancia de realizarse una mamografía anual.
+                </p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <img src="assets/images/prevencion_2.png" alt="Lazo rosa de concienciación"
+                        style="max-width: 200px;">
+                    <p><em>Recuerda: si detectas cualquier cambio, es esencial que consultes con un médico.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Myths Section -->
+        <section class="section" style="background-color: #fff;">
+            <div class="content-container">
+                <h2>Mitos y realidades sobre la prevención</h2>
+
+                <div class="myth-fact">
+                    <h3>❌ Mito: Los desodorantes y antitranspirantes causan cáncer de mama.</h3>
+                    <p>✔️ <strong>Realidad:</strong> No hay evidencia científica confiable que demuestre que los
+                        desodorantes o antitranspirantes aumenten el riesgo de cáncer de mama.</p>
+                </div>
+
+                <div class="myth-fact">
+                    <h3>❌ Mito: Usar sostén con varillas aumenta el riesgo de cáncer de mama.</h3>
+                    <p>✔️ <strong>Realidad:</strong> No hay evidencia científica que sugiera que los sostenes, con o sin
+                        varillas, aumenten el riesgo de cáncer de mama.</p>
+                </div>
+
+                <div class="myth-fact">
+                    <h3>❌ Mito: Los implantes mamarios aumentan significativamente el riesgo de cáncer.</h3>
+                    <p>✔️ <strong>Realidad:</strong> Los implantes mamarios no aumentan significativamente el riesgo de
+                        cáncer de mama, aunque pueden hacer que las mamografías sean más difíciles de interpretar.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h3>Contáctanos [ <a
+                    href="mailto:mammoinsightdevelops@mammoinsight.org">mammoinsightdevelops@mammoinsight.org</a> ]</h3>
+        </section>
+    </footer>
+
+</body>
+
+</html>
